@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hannah Furman — Marketing Strategist</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&amp;display=swap">
+<style>
+body{margin:0;font-family:'Archivo',system-ui,sans-serif;color:#111;background:#F3F1EC}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.sticker{transition:transform .2s}
+.sticker:hover{transform:rotate(-4deg) scale(1.08)!important}
+.card{position:relative;text-align:left;border:2px solid #111;background:#fff;padding:28px;overflow:hidden;transition:transform .2s,box-shadow .2s;clip-path:polygon(0 0,calc(100% - 36px) 0,100% 36px,100% 100%,0 100%)}
+.card:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 #111}
+.card .reveal{transform:translateY(12px);opacity:0;transition:all .25s}
+.card:hover .reveal{transform:none;opacity:1}
+.lk{display:block;border:2px solid #111;background:#fff;padding:20px;transition:background .2s,transform .2s}
+.lk:hover{background:#FFC93C;transform:rotate(-1deg)}
+.btn{display:inline-block;border:2px solid #111;padding:14px 22px;font-weight:800;font-size:15px;background:#111;color:#fff;transition:transform .2s}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:4px 4px 0 #2B4EFF}
+@keyframes grow{from{width:0}}
+.bar{animation:grow 1.2s ease-out}
+</style>
+</helmet>
+<div style="width:100%;box-sizing:border-box">
+
+<div style="position:sticky;top:0;z-index:20;background:#F3F1EC;border-bottom:2px solid #111;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:14px 40px">
+<a href="#top" style="font-weight:900;font-size:22px;letter-spacing:-1px">HF<span style="color:#FF4B2B">.</span></a>
+<div style="display:flex;flex-wrap:wrap;gap:28px;font-weight:600;font-size:15px">
+<a href="#work">Work</a><a href="#creative">Creative</a><a href="#about">About</a><a href="#contact">Contact</a>
+</div>
+<a class="btn" href="./assets/ec04cdc6910677be2801963ee76bf0de.pdf" target="_blank" style="padding:10px 18px">See resume ↗</a>
+</div>
+
+<div id="top" style="padding:72px 40px 56px;display:flex;flex-wrap:wrap;gap:48px;align-items:center;max-width:1280px;margin:0 auto">
+<div style="flex:999 1 520px;min-width:0">
+<div class="sticker" style="display:inline-block;background:#FFC93C;border:2px solid #111;padding:6px 14px;font-weight:800;font-size:13px;letter-spacing:1px;transform:rotate(-2deg)">MARKETING STRATEGIST</div>
+<h1 style="margin:22px 0 0;font-weight:900;font-size:clamp(34px,5.8vw,88px);line-height:.95;letter-spacing:-0.045em;white-space:nowrap">Part storyteller.<br>Part spreadsheet.<br><span style="color:#2B4EFF">All pipeline.</span></h1>
+<p style="font-size:22px;line-height:1.45;max-width:620px;margin:28px 0 0">I'm Hannah, a marketing strategist who ties creative storytelling to the KPIs that drive it, so teams building things that matter get found, trusted, and funded.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:32px">
+<a class="btn" href="#work">See the work →</a>
+<a class="btn" href="#contact" style="background:#fff;color:#111">Let's talk</a>
+</div>
+</div>
+<div style="flex:1 1 300px;position:relative;min-height:340px">
+<img src="./assets/e8eb502b6384a19b9bee429cf0068d26.jpg" alt="Hannah Furman" style="display:block;width:100%;height:420px;object-fit:cover;object-position:center 20%;border:2px solid #111;box-sizing:border-box;background:#2B4EFF">
+<div class="sticker" style="position:absolute;top:-14px;right:-8px;background:#FF4B2B;border:2px solid #111;padding:8px 14px;font-weight:800;transform:rotate(5deg)">Brand</div>
+<div class="sticker" style="position:absolute;top:120px;left:-22px;background:#fff;border:2px solid #111;padding:8px 14px;font-weight:800;transform:rotate(-5deg)">Lifecycle</div>
+<div class="sticker" style="position:absolute;bottom:60px;right:-14px;background:#FFC93C;border:2px solid #111;padding:8px 14px;font-weight:800;transform:rotate(4deg)">Paid</div>
+<div class="sticker" style="position:absolute;bottom:-12px;left:20px;background:#1F9D6B;color:#fff;border:2px solid #111;padding:8px 14px;font-weight:800;transform:rotate(-3deg)">Content</div>
+</div>
+</div>
+
+<div id="impact" style="background:#111;color:#fff;padding:48px 40px">
+<div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px">
+<sc-for list="{{stats}}" as="s" hint-placeholder-count="4">
+<div>
+<div style="font-weight:900;font-size:64px;letter-spacing:-3px;color:{{s.color}}">{{s.shown}}</div>
+<div style="font-size:15px;line-height:1.4;margin-top:6px;opacity:.85">{{s.label}}</div>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div id="work" style="padding:88px 40px 40px;max-width:1280px;margin:0 auto">
+<div style="font-weight:800;font-size:13px;letter-spacing:2px;color:#FF4B2B">SELECTED WORK · LUMINA SOLAR</div>
+<h2 style="margin:8px 0 12px;font-weight:900;font-size:56px;letter-spacing:-2px;line-height:1">Campaigns I owned, start to finish.</h2>
+<p style="font-size:18px;max-width:640px;margin:0 0 36px">Figures are rounded. Tap a card for the full story.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+<sc-for list="{{cases}}" as="c" hint-placeholder-count="3">
+<button class="card" onClick="{{ c.open }}" style="background:{{c.bg}};color:{{c.fg}};min-height:340px;display:flex;flex-direction:column;justify-content:space-between">
+<div>
+<div style="font-weight:800;font-size:12px;letter-spacing:2px">{{c.tag}}</div>
+<div style="font-weight:900;font-size:40px;letter-spacing:-1.5px;line-height:1;margin-top:14px">{{c.title}}</div>
+<div style="font-size:16px;line-height:1.45;margin-top:14px">{{c.blurb}}</div>
+</div>
+<div>
+<div style="font-weight:900;font-size:54px;letter-spacing:-2px;margin-top:20px">{{c.big}}</div>
+<div class="reveal" style="font-weight:800;margin-top:6px">Open case study →</div>
+</div>
+</button>
+</sc-for>
+</div>
+</div>
+
+<sc-if value="{{ isOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed;inset:0;z-index:50;background:rgba(17,17,17,.7);overflow-y:auto;padding:32px 16px;box-sizing:border-box">
+<div style="max-width:880px;margin:0 auto;background:#F3F1EC;border:2px solid #111;padding:40px;box-sizing:border-box">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+<div style="font-weight:800;font-size:12px;letter-spacing:2px;color:#FF4B2B">{{cur.tag}}</div>
+<button onClick="{{ close }}" style="border:2px solid #111;background:#fff;padding:8px 16px;font-weight:800">Close ✕</button>
+</div>
+<h3 style="margin:12px 0 28px;font-weight:900;font-size:52px;letter-spacing:-2px;line-height:1">{{cur.title}}</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+<div style="background:#fff;border:2px solid #111;padding:20px"><div style="font-weight:800;font-size:12px;letter-spacing:2px;color:#2B4EFF">CHALLENGE</div><p style="margin:8px 0 0;line-height:1.5">{{cur.challenge}}</p></div>
+<div style="background:#fff;border:2px solid #111;padding:20px"><div style="font-weight:800;font-size:12px;letter-spacing:2px;color:#2B4EFF">APPROACH</div><p style="margin:8px 0 0;line-height:1.5">{{cur.approach}}</p></div>
+</div>
+<sc-if value="{{ cur.hasPhases }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+<sc-for list="{{cur.phases}}" as="p" hint-placeholder-count="3">
+<div style="background:#fff;border:2px solid #111;border-top:8px solid {{p.color}};padding:20px">
+<div style="font-weight:800;font-size:12px;letter-spacing:2px;color:{{p.color}}">{{p.step}}</div>
+<div style="font-weight:900;font-size:26px;letter-spacing:-1px;margin-top:4px">{{p.title}}</div>
+<sc-for list="{{p.items}}" as="it" hint-placeholder-count="4">
+<div style="margin-top:12px;font-size:15px;line-height:1.5">{{it}}</div>
+</sc-for>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<div style="background:#111;color:#fff;padding:24px;margin-top:20px">
+<div style="font-weight:800;font-size:12px;letter-spacing:2px;color:#FFC93C">{{cur.resultsLabel}}</div>
+<sc-for list="{{cur.results}}" as="r" hint-placeholder-count="3">
+<div style="padding:10px 0;border-top:1px solid #444;margin-top:10px;line-height:1.45">{{r}}</div>
+</sc-for>
+</div>
+<sc-if value="{{ cur.hasLinks }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:12px">
+<sc-for list="{{cur.links}}" as="k" hint-placeholder-count="5">
+<a href="{{k.href}}" target="_blank" style="border:2px solid #111;background:#fff;padding:12px 18px;font-weight:800;font-size:14px">{{k.label}} ↗</a>
+</sc-for>
+</div>
+</sc-if>
+<sc-if value="{{ cur.hasFunnel }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:20px;border:2px solid #111;background:#fff;padding:24px">
+<div style="font-weight:800;font-size:12px;letter-spacing:2px;color:#2B4EFF">THE GOOGLE ADS FUNNEL, 2024 VS. 2026 (ROUNDED)</div>
+<sc-for list="{{funnel}}" as="f" hint-placeholder-count="4">
+<div style="margin-top:14px">
+<div style="font-weight:600;font-size:14px;margin-bottom:4px">{{f.label}}</div>
+<div style="background:#eee;height:26px"><div class="bar" style="height:26px;background:{{f.color}};width:{{f.w}};color:#fff;font-weight:800;font-size:13px;line-height:26px;padding-left:8px;box-sizing:border-box;white-space:nowrap">{{f.val}}</div></div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+</div>
+</div>
+</sc-if>
+
+<div id="creative" style="padding:72px 40px;max-width:1280px;margin:0 auto">
+<div style="font-weight:800;font-size:13px;letter-spacing:2px;color:#FF4B2B">VIDEO · SOCIAL · WRITING</div>
+<h2 style="margin:8px 0 12px;font-weight:900;font-size:56px;letter-spacing:-2px;line-height:1">Shot, written, and edited in-house.</h2>
+<p style="font-size:18px;max-width:640px;margin:0 0 32px">Every piece links to the live version.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+<sc-for list="{{links}}" as="l" hint-placeholder-count="6">
+<a class="lk" href="{{l.href}}" target="_blank" style="border-top:8px solid {{l.color}}">
+<div style="font-weight:800;font-size:11px;letter-spacing:2px;color:{{l.color}}">{{l.kind}}</div>
+<div style="font-weight:800;font-size:19px;line-height:1.2;margin-top:8px">{{l.title}}</div>
+<div style="font-size:14px;line-height:1.45;margin-top:8px">{{l.note}}</div>
+</a>
+</sc-for>
+</div>
+</div>
+
+<div id="about" style="background:#2B4EFF;color:#fff;padding:88px 40px">
+<div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:48px">
+<div style="flex:1 1 380px">
+<div style="font-weight:800;font-size:13px;letter-spacing:2px;color:#FFC93C">ABOUT &amp; PHILOSOPHY</div>
+<h2 style="margin:10px 0 0;font-weight:900;font-size:56px;letter-spacing:-2px;line-height:1">Brand and performance are one job, not two.</h2>
+<p style="font-size:18px;line-height:1.6;margin-top:24px">Great marketing is a conversation with someone who has real questions, real objections, and real budgets. I've spent four years at Lumina Solar going from campaign execution to owning strategy, a multimillion-dollar budget, and lead generation, working alongside Sales, Finance, and Ops to tie it all back to pipeline.</p>
+</div>
+<div style="flex:1 1 380px;display:flex;flex-direction:column;gap:16px">
+<sc-for list="{{beliefs}}" as="b" hint-placeholder-count="3">
+<div style="background:#fff;color:#111;border:2px solid #111;padding:22px">
+<div style="font-weight:900;font-size:24px;letter-spacing:-.5px">{{b.h}}</div>
+<div style="font-size:15px;line-height:1.5;margin-top:8px">{{b.p}}</div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div id="contact" style="padding:96px 40px;max-width:1280px;margin:0 auto;text-align:center">
+<h2 style="margin:0;font-weight:900;font-size:88px;letter-spacing:-4px;line-height:.95">Let's scale<br>something good<span style="color:#FF4B2B">.</span></h2>
+<p style="font-size:20px;max-width:560px;margin:24px auto 0">Building tech that makes a real difference and need a marketer who owns creative and the numbers? Say hi.</p>
+<div style="margin-top:32px"><a class="btn" href="mailto:hannah0furman@gmail.com?subject=Let%27s%20scale%20together" style="font-size:20px;padding:18px 32px;background:#FF4B2B;color:#111">Email Me →</a></div>
+<div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:28px;justify-content:center;font-weight:600">
+<a href="https://www.linkedin.com/in/hannah-furman-/" target="_blank" style="border-bottom:2px solid #111">LinkedIn</a>
+<a href="tel:7572629017" style="border-bottom:2px solid #111">757-262-9017</a>
+<a href="./assets/ec04cdc6910677be2801963ee76bf0de.pdf" target="_blank" style="border-bottom:2px solid #111">Resume (PDF)</a>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1360,"height":4300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { open: -1, t: 0 };
+    this.started = false;
+  }
+  componentDidMount() {
+    const go = () => {
+      if (this.started) return;
+      this.started = true;
+      const t0 = Date.now();
+      const tick = () => {
+        const p = Math.min(1, (Date.now() - t0) / 1600);
+        this.setState({ t: p });
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    const check = () => {
+      const el = document.getElementById('impact');
+      if (el && el.getBoundingClientRect().top < window.innerHeight * 0.9) go();
+    };
+    document.addEventListener('scroll', check, true);
+    setTimeout(check, 400);
+    setTimeout(go, 4000);
+  }
+  renderVals() {
+    const e = 1 - Math.pow(1 - this.state.t, 3);
+    const stats = [
+      { shown: '$' + Math.round(100 * e) + 'k+', label: 'recovered by one automated win-back flow in its first six months', color: '#FFC93C' },
+      { shown: '~' + Math.round(4 * e) + 'x', label: "growth in Google Ads' share of company revenue", color: '#fff' },
+      { shown: '~' + Math.round(40 * e) + '%', label: 'lower acquisition cost than the best third-party lead vendor', color: '#FF4B2B' },
+      { shown: '3', label: 'channels built and owned end to end: lifecycle email, paid search, and referral', color: '#fff' }
+    ];
+    const defs = [
+      { tag: 'LIFECYCLE · HUBSPOT', title: 'Win-back email flow', bg: '#FFC93C', fg: '#111', big: '$100k+', blurb: 'Turning closed-lost proposals back into revenue, with zero new acquisition spend.',
+        challenge: "Prospects who got a proposal but didn't buy were going cold, and each one had a different reason.",
+        approach: 'One automated HubSpot workflow that branches by closed-lost reason (timing, budget, shade and trees). Re-engage each lead six-months after it\'s lost with messaging that answers their specific objection.',
+        results: ['$100k+ in recovered revenue in the first six months after launch.', 'An evergreen channel: newly eligible leads enroll automatically.'] },
+      { tag: 'PAID · SALESFORCE', title: 'Google Ads lead engine', bg: '#2B4EFF', fg: '#fff', big: '~4x', blurb: 'Building an in-house channel that beat every third-party lead vendor on cost and conversion.', hasFunnel: true,
+        challenge: 'Lumina relied on expensive third-party lead vendors, and I wanted a more scalable, cost-effective lead source we controlled.',
+        approach: 'Built and scaled Search and Performance Max. Tracked every channel from lead to appointment to win in Salesforce, judged on quality, conversion, and CAC rather than lead volume, and shifted Google’s share of marketing investment from roughly 7% to roughly 29%.',
+        results: ['~4x growth in revenue contribution.', 'Lead-to-appointment rate up from ~19% to ~48%; lead-to-win from ~5% to ~9%.', 'Acquisition cost ~40% below the best-performing vendor.', 'Investment grew ~3.8x while CAC stayed within ~4% of 2024; closed wins roughly 3.5x.'] },
+      { tag: 'ADVOCACY · EXTOLE', title: 'Referral program 2.0 & 2.1', bg: '#fff', fg: '#111', big: 'v2.0 → v2.1', blurb: 'Launching a smarter referral program, then letting six months of data tell me what to cut.',
+        resultsLabel: 'WHAT HAPPENED',
+        challenge: "Lumina's referral program paid a flat $500 per install, and random promotions taught customers to wait. Tracking was manual, and there was no strategy behind the incentives.",
+        approach: 'I led the rebuild across Finance, Business Strategy, and Sales, launched it on Extole integrated with Salesforce, then let six months of data decide what to keep, cut, and add.',
+        phases: [
+          { step: '01', title: 'Diagnose', color: '#2B4EFF', items: ['Rewards were a flat $500 per referral that installed. Frequent, random promotions boosted volume only temporarily.', 'Customers noticed. They held onto referral contacts and waited for the next promotion to share them.', 'Nothing was automated. Advocates had to call their consultant, and attribution was entered in Salesforce by hand.', 'Tackled in tandem with the Google Ads lead engine, as part of turning Lumina into its own lead engine.'] },
+          { step: '02', title: 'Build 2.0', color: '#C8260A', items: ['Led the project with Finance, Business Strategy, Inside Sales, and Outside Sales so the program fit every team’s processes and priorities.', 'Evaluated advocacy tools and brought on Extole, integrated with Salesforce to track and automate the program.', 'Gave advocates unique referral links, which cut friction when turning referrals into leads and made sure the right advocate got credit.', 'Added a small reward after the referral’s consultant meeting, to thank advocates for the act of referring whether or not their friend went solar.', 'Introduced tiered advocate rewards at install and a reward for the referred friend after install, positioned as a rebate that helped Sales close and a natural moment to invite the friend to become an advocate.', 'Launched April 1, 2026, with a dedicated referral landing page I built and an Instagram and Facebook announcement whose graphics and copy I created.'] },
+          { step: '03', title: 'Measure, then 2.1', color: '#137A52', items: ['Launched 2.0 on April 1, 2026, and dug into the data in August and September before changing anything.', 'The data was clear: referral lead volume was below the prior six months, and close rate rose less than a point.', 'The meeting reward and the friend reward were not moving the needle. Sales and customers loved the tiered advocate rewards, and customers wished non-solar referrals were rewarded too.', '2.1 cut the underperforming incentives, kept the tiers, and added a $250 reward for roofing-only and battery-only referrals. Even with that addition, cutting the rewards that did not help brought customer acquisition cost down significantly.', 'Launched October 1, 2026, with an email to every advocate who had been active since April 1, showing the tier ladder, the new non-solar reward, and their unique link. Everyone else got a lighter email focused on the current rules, since they had not referred under 2.0 and did not need the changes explained. I also updated the landing page.'] }
+        ],
+        links: [
+          { label: 'Referral landing page', href: 'https://luminasolar.com/solar-referral-program/' },
+          { label: '2.0 launch post', href: 'https://www.instagram.com/p/DXJwJxQjsWq/?img_index=1' }
+        ],
+        results: ['Replaced manual tracking and random promotions with unique links, automated attribution, and a tiered reward structure.', 'Six months of data showed 2.0 fell short on volume and close rate, and I said so plainly.', 'Acted on it. Cutting the rewards that did not help lowered customer acquisition cost significantly, even after adding a new reward. 2.1 launched October 1, 2026, and results are still coming in.'] },
+      { tag: 'EVENT · EVENTBRITE', title: 'Webinar: From Confusion to Clarity', bg: '#FF4B2B', fg: '#111', big: '$250', blurb: 'Planning, promoting, and following up on a homeowner webinar about the end of the 25D tax credit, on a $250 promo cap.', resultsLabel: 'WHAT I OWNED',
+        challenge: 'In July 2025 a new federal bill ended the 25D residential solar tax credit. Homeowners were hearing conflicting information and fear-based headlines, with real questions about deadlines, eligibility, and what comes next.',
+        approach: 'A free live webinar, held September 2025, where Lumina’s VP of Residential Sales and Director of Legal Operations answered those questions in plain English. I owned everything around it except the hosting: the content plan, the promotion, and the follow-up.',
+        phases: [
+          { step: '01', title: 'Plan', color: '#2B4EFF', items: ['Chose the name from 10 options, landing on a title that promised clarity instead of jargon.', 'Mapped the content across seven topic areas, from what the bill is and the “mechanical completion” deadline to 48E, leasing options, and a homeowner action plan.', 'Wrote the run-of-show, opening with a “deep breath” moment to calm the fear, then moving through the facts and ending on a dose of hope.', 'Prepared 24 questions: 10 for the speakers and 14 audience-style questions to seed the Q&A if no one asked.', 'Built the presentation deck the speakers presented from.'] },
+          { step: '02', title: 'Promote', color: '#C8260A', items: ['Set up the Eventbrite registration page and wrote the event description.', 'Wrote the copy for a 10-question FAQ page on the Lumina site, so the topic had a home that lasted beyond the event.', 'Designed the social graphic and posted it to launch the promotion.', 'Ran a short paid promotion on Eventbrite, capped at $250 total.'] },
+          { step: '03', title: 'Follow up', color: '#137A52', items: ['Wrote the email sequence: a confirmation sent immediately after registering, a day-of reminder to every registrant, and two post-webinar emails.', 'Split the post-webinar email in two, one for attendees and one for no-shows, each linking the replay and a recap.', 'Edited the recording into short clips for social, including the 2.5-minute LinkedIn cut that pointed viewers back to the full replay.', 'Published the full recording on YouTube.'] }
+        ],
+        links: [
+          { label: 'Event page', href: 'https://www.eventbrite.com/e/from-confusion-to-clarity-what-the-new-bill-means-for-homeowners-tickets-1628817730679' },
+          { label: 'FAQ page', href: 'https://luminasolar.com/one-big-beautiful-bill-section-25d/' },
+          { label: 'Full webinar', href: 'https://www.youtube.com/watch?v=jVEATJ-Oyv4' },
+          { label: 'LinkedIn clip', href: 'https://lnkd.in/p/ecSgf-rM' },
+          { label: 'Launch post', href: 'https://www.instagram.com/p/DN3iXkaZgdL/' }
+        ],
+        results: ['Planned, promoted, and followed up on the whole event as one connected campaign, from content to registration to replay.', 'Every touchpoint pointed to the next: social to registration, registration to reminder, reminder to replay, replay to the FAQ page.', 'Turned one live hour into evergreen assets: the recording, social clips, and an FAQ page that keeps answering homeowners’ questions.'] }
+    ];
+    const cases = defs.map((d, i) => ({ ...d, open: () => this.setState({ open: i }) }));
+    const o = this.state.open;
+    const base = o >= 0 ? defs[o] : defs[0];
+    const cur = { resultsLabel: 'RESULTS', ...base, hasPhases: !!base.phases, hasLinks: !!base.links, phases: base.phases || [], links: base.links || [] };
+    const funnel = [
+      { label: '2024 · Lead to appointment', w: '19%', val: '~19%', color: '#8a96d9' },
+      { label: '2026 · Lead to appointment', w: '48%', val: '~48%', color: '#2B4EFF' },
+      { label: '2024 · Lead to win', w: '5%', val: '~5%', color: '#d9a08a' },
+      { label: '2026 · Lead to win', w: '9%', val: '~9%', color: '#FF4B2B' }
+    ];
+    const yt = 'https://www.youtube.com/watch?v=';
+    const links = [
+      { kind: 'VIDEO', title: 'Getting Started with Lumina Through EnergySage', note: 'A guide that answers homeowners\u2019 questions from proposal to signed agreement.', href: yt + 'S_kP8VaiZ7E&t=3s' },
+      { kind: 'VIDEO', title: 'Meet the Founders: Lumina\u2019s 6th Anniversary', note: 'All four founders self-recorded on their phones, on purpose, to keep it candid.', href: yt + 'GMnIVCT5ShY' },
+      { kind: 'WEBINAR', title: 'From Confusion to Clarity: What the New Bill Means for Homeowners', note: 'Produced and promoted end to end, with registration, emails, replay, and clips.', href: yt + 'jVEATJ-Oyv4' },
+      { kind: 'LINKEDIN', title: 'Webinar clip: big policy changes, big opportunities', note: 'A 2.5 minute cut that drove viewers to the full replay.', href: 'https://lnkd.in/p/ecSgf-rM' },
+      { kind: 'LINKEDIN', title: 'Lumina turns 7', note: 'Anniversary edit built from employee and event photos.', href: 'https://lnkd.in/p/eCz5EDEm' },
+      { kind: 'LINKEDIN', title: 'Meet Tony, Roofing Coordinator', note: 'An employer-brand spotlight on career growth.', href: 'https://lnkd.in/p/eDpQ7fhD' },
+      { kind: 'INSTAGRAM', title: 'The Lumina pet bandana promo', note: 'A customer gift campaign built to be shared and tagged.', href: 'https://www.instagram.com/p/DLVmcWCRSKz/' },
+      { kind: 'BLOG', title: 'What the 2027 Changes Mean for Maryland Net Metering', note: 'Policy explained for homeowners.', href: 'https://luminasolar.com/maryland-net-metering-changes-2027/' },
+      { kind: 'PRESS RELEASE', title: 'Lumina and Switch Together Make Solar More Accessible', note: 'Partnership announcement for the Mid-Atlantic.', href: 'https://luminasolar.com/lumina-partners-with-switch-together-to-make-solar-more-accessible-across-the-mid-atlantic/' },
+      { kind: 'BLOG', title: 'How to Protect Yourself From Rising Mid-Atlantic Electricity Costs', note: 'Practical guidance for rising utility bills.', href: 'https://luminasolar.com/protect-yourself-from-rising-electricity-costs-2025/' },
+      { kind: 'BLOG', title: 'What the PJM Capacity Auction Means for Electricity Costs', note: 'Complex energy markets in plain English.', href: 'https://luminasolar.com/pjm-capacity-auction-report/' },
+      { kind: 'ARTICLE', title: 'Inside the IKO Roofing Commercial Solar Project', note: 'A commercial case story with drone footage.', href: 'https://luminasolar.com/iko-roofing-commercial-solar-project/' }
+    ];
+    const beliefs = [
+      { h: 'Consistency is a strategy.', p: 'I wrote Lumina\u2019s first brand guidelines so a whole team could show up the same way in every channel.' },
+      { h: 'Meet people where they are.', p: 'Different people have different reasons for not buying yet. My win-back flow answers each one.' },
+      { h: 'Let the numbers drive iterations.', p: 'I review CPL, CAC, and conversion daily, and I will cut what is not working. Six months of referral data told me what to keep.' }
+    ];
+    return { stats, cases, cur, funnel, links: links.map((l) => ({ ...l, color: ['VIDEO', 'WEBINAR'].includes(l.kind) ? '#2B4EFF' : ['LINKEDIN', 'INSTAGRAM'].includes(l.kind) ? '#C8260A' : '#137A52' })), beliefs, isOpen: o >= 0, close: () => this.setState({ open: -1 }) };
+  }
+}
+</script>
+</body>
+</html>
