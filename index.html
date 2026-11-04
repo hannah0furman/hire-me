@@ -70,8 +70,8 @@ button{font-family:inherit;cursor:pointer}
 </div>
 
 <div id="work" style="padding:88px 40px 40px;max-width:1280px;margin:0 auto">
-<div style="font-weight:800;font-size:13px;letter-spacing:2px;color:#FF4B2B">SELECTED WORK · LUMINA SOLAR</div>
-<h2 style="margin:8px 0 12px;font-weight:900;font-size:56px;letter-spacing:-2px;line-height:1">Campaigns I owned, start to finish.</h2>
+<div style="font-weight:800;font-size:13px;letter-spacing:2px;color:#FF4B2B">SELECTED WORK · LUMINA SOLAR + INDEPENDENT</div>
+<h2 style="margin:8px 0 12px;font-weight:900;font-size:56px;letter-spacing:-2px;line-height:1">Projects I owned, start to finish.</h2>
 <p style="font-size:18px;max-width:640px;margin:0 0 36px">Figures are rounded. Tap a card for the full story.</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
 <sc-for list="{{cases}}" as="c" hint-placeholder-count="3">
@@ -262,7 +262,21 @@ class Component extends DCLogic {
           { label: 'LinkedIn clip', href: 'https://lnkd.in/p/ecSgf-rM' },
           { label: 'Launch post', href: 'https://www.instagram.com/p/DN3iXkaZgdL/' }
         ],
-        results: ['Planned, promoted, and followed up on the whole event as one connected campaign, from content to registration to replay.', 'Every touchpoint pointed to the next: social to registration, registration to reminder, reminder to replay, replay to the FAQ page.', 'Turned one live hour into evergreen assets: the recording, social clips, and an FAQ page that keeps answering homeowners’ questions.'] }
+        results: ['Planned, promoted, and followed up on the whole event as one connected campaign, from content to registration to replay.', 'Every touchpoint pointed to the next: social to registration, registration to reminder, reminder to replay, replay to the FAQ page.', 'Turned one live hour into evergreen assets: the recording, social clips, and an FAQ page that keeps answering homeowners’ questions.'] },
+      { tag: 'CREATIVE DIRECTION · VOLUNTEER', title: 'Podcast creative director', bg: '#137A52', fg: '#fff', big: '~1,000', blurb: 'Volunteer creative director for a friend-run podcast: the website, every YouTube edit, and a hands-on education in long-form production. Followers reached about 1,000 in nine months.', resultsLabel: 'WHAT IT SHOWS',
+        challenge: 'In January 2025, a group of friends launched a casual, conversational podcast, the Baltimore Bitches Podcast. It was a passion project that never made money and has since wound down. I offered to help because I could edit, and I became its unofficial Creative Director.',
+        approach: 'Unpaid and self-directed, I treated it like a real brand: I built the website, edited the episodes, and made the social content. The tone is casual by design, so it shows I can work in a brand voice very different from my day job, and I learned long-form video and audio production hands-on.',
+        phases: [
+          { step: '01', title: 'Build', color: '#2B4EFF', items: ['Created the show’s website, which has since been taken down.', 'Held the unofficial title of Creative Director, given to me by the hosts.'] },
+          { step: '02', title: 'Produce', color: '#C8260A', items: ['Edited every YouTube episode.', 'Edited the full podcast audio toward the end of the run, about 20% of episodes.', 'Learned long-form pacing, structure, and episode planning by doing it.'] },
+          { step: '03', title: 'Promote', color: '#8A6100', items: ['Created most of the show’s social media content.', 'The hosts posted on their own schedule, so I supplied the content and they published when they chose.', 'Followers grew to about 1,000 in the first nine months.'] }
+        ],
+        links: [
+          { label: 'Top episode 1', href: 'https://youtu.be/Qe3QNTZ4trc' },
+          { label: 'Top episode 2', href: 'https://www.youtube.com/watch?v=lEDpy-1zJ9Q&t=346s' }
+        ],
+        results: ['Volunteer work, delivered consistently: every YouTube episode edited and the show’s website built.', 'Followers grew to about 1,000 in the first nine months of the show.', 'Long-form video and audio editing skills built from scratch, which carry straight into my webinar and video work.']
+      }
     ];
     const cases = defs.map((d, i) => ({ ...d, open: () => this.setState({ open: i }) }));
     const o = this.state.open;
